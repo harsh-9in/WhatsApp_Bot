@@ -8,9 +8,9 @@ time.sleep(3)
 
 
 chrome.get("https://web.whatsapp.com/")
-time.sleep(8)
+time.sleep(10)
 
-search_box= chrome.find_element_by_class_name("_2S1VP")
+search_box = chrome.find_element_by_xpath('//*[@id="side"]/div[1]/div/label/div/div[2]')
 name= input()
 search_box.send_keys(name)
 search_box.send_keys(Keys.ENTER)
